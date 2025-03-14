@@ -1,0 +1,11 @@
+ Function to calculate the expression 2^(2n) + n + 5
+def calculate_expression(n):
+    result = (2 ** (2 * n)) + n + 5
+    return result
+
+Input the value of n
+n = int(input("Enter a value for n: "))
+
+Calculate and print the result
+result = calculate_expression(n)
+print(f"The value of 2^(2n) + n + 5 for n = {n} is: {result}")
