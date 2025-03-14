@@ -1,0 +1,20 @@
+Function to print prime factors of a number
+def prime_factors(number):
+    Start with the smallest prime number, which is 2
+    factor = 2
+    while factor * factor <= number:
+        if number % factor == 0:
+            print(factor, end=" ")
+            number //= factor
+        else:
+            factor += 1
+     If number is a prime number greater than 2
+    if number > 1:
+        print(number)
+
+ Input the number from the user
+num = int(input("Enter a number to find its prime factors: "))
+
+ Print the prime factors
+print(f"Prime factors of {num} are:")
+prime_factors(num)
