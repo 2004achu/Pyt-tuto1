@@ -1,0 +1,8 @@
+ Function to calculate X raised to the power Y without using pow() or **
+def power(X, Y):
+    result = 1
+    for _ in range(abs(Y)):  # Iterate Y times
+        result *= X  # Multiply X to the result in each iteration
+
+    If Y is negative, take the reciprocal of the result
+    
