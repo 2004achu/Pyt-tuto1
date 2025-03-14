@@ -1,0 +1,27 @@
+Input: Taking 4 integers from the user
+numbers = []
+for i in range(4):
+    num = int(input(f"Enter integer {i + 1}: "))
+    numbers.append(num)
+
+ Initialize sums and counts
+sum_positive = 0
+sum_negative = 0
+count_positive = 0
+count_negative = 0
+
+ Loop through the numbers to calculate the sum and count for positive and negative numbers
+for num in numbers:
+    if num > 0:
+        sum_positive += num
+        count_positive += 1
+    elif num < 0:
+        sum_negative += num
+        count_negative += 1
+
+ Calculate the averages
+average_positive = sum_positive / count_positive if count_positive > 0 else 0
+average_negative = sum_negative / count_negative if count_negative > 0 else 0
+
+ Output the results
+print(f"Sum of posi
