@@ -1,0 +1,10 @@
+def remove_duplicates(lst):
+    return list(set(lst))
+
+
+numbers = input("Enter numbers separated by spaces: ").split()
+
+
+unique_numbers = remove_duplicates(numbers)
+
+print("List after removing duplicates:", unique_numbers)
