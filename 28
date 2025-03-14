@@ -1,0 +1,10 @@
+ Input: Taking the lower and upper limits from the user
+lower_limit = int(input("Enter the lower limit: "))
+upper_limit = int(input("Enter the upper limit: "))
+
+Initialize the sum of odd numbers
+sum_of_odds = 0
+
+Loop through the numbers in the range from lower_limit to upper_limit (inclusive)
+for num in range(lower_limit, upper_limit + 1):
+    if num % 2 != 0:  # Check if the number
