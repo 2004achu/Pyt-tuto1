@@ -1,0 +1,15 @@
+def convert_seconds_to_hms(seconds):
+     Calculate hours, minutes, and remaining seconds
+    hours = seconds // 3600
+    minutes = (seconds % 3600) // 60
+    remaining_seconds = seconds % 60
+    
+    Format the time in HH:MM:SS
+    return f"{hours:02}:{minutes:02}:{remaining_seconds:02}"
+
+ Input time in seconds
+seconds = int(input("Enter time in seconds: "))
+
+ Convert and display the result
+formatted_time = convert_seconds_to_hms(seconds)
+print(f"Time in HH:MM:SS format: {formatted_time}")
