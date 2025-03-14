@@ -1,0 +1,13 @@
+Function to print multiplication table of numbers from 1 to n
+def print_multiplication_tables(n):
+    for i in range(1, n+1):
+        print(f"Multiplication table of {i}:")
+        for j in range(1, 11):  # Multiplying from 1 to 10
+            print(f"{i} x {j} = {i*j}")
+        print()  # Print an empty line between tables for clarity
+
+ Input the value of n
+n = int(input("Enter a number n to print multiplication tables from 1 to n: "))
+
+ Print multiplication tables
+print_multiplication_tables(n)
