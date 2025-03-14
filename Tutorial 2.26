@@ -1,0 +1,24 @@
+def separate_elements(mixed_list):
+    integers = []
+    floats = []
+    strings = []
+    
+    for item in mixed_list:
+        
+        if item.isdigit():  
+            integers.append(int(item))
+        elif item.replace('.', '', 1).isdigit() and item.count('.') < 2:
+            floats.append(float(item))
+        else:
+            strings.append(item)
+    
+    return integers, floats, strings
+
+
+mixed_list = input("Enter elements separated by spaces: ").split()
+
+
+integers, floats, strings = separate_elements(mixed_list)
+print("Integers:", integers)
+print("Floating point numbers:", floats)
+print("Strings:", strings)
