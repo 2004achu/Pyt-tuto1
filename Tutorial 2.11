@@ -1,0 +1,28 @@
+import re
+
+def is_valid_password(password):
+    Check minimum length
+    if len(password) < 6:
+        return False
+
+     Check required conditions
+    if (re.search(r'[a-z]', password) and    # At least one lowercase letter
+        re.search(r'[A-Z]', password) and    # At least one uppercase letter
+        re.search(r'\d', password) and       # At least one digit
+        re.search(r'[$#@]', password)):      # At least one special character ($, #, @)
+        return True
+    return False
+
+
+
+
+
+
+
+password = input("Enter your password: ")
+
+
+if is_valid_password(password):
+    print("Valid password!")
+else:
+    print("Invalid password. Please meet all the requirements.")
